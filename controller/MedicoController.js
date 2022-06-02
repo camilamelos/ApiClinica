@@ -177,7 +177,7 @@ router.put("/medico/editarMedico", upload.array("files", 2), (req, res) => {
           { where: { id } }
         )
         .then(() => {
-          res.send("DADOS DE MÉDICOS ALTERADOS COM SUCESSO!");
+          res.send("DADOS DE MÉDICOS ALTERADOS COM SUCESSO!!");
         });
     });
   } else {
