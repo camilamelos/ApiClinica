@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "ee29aab7-5de8-4a8c-9916-bfb86621938e",
+		"name": "api_clinica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Especialidade",
+			"item": [
+				{
+					"name": "listarEspecialidade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/categoria/listarCategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"listarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarEspecialidadePorId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/categoria/listarCategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"listarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserirEspecialidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_categoria\" :\"C++\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/categoria/cadastrarCategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"cadastrarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterarEspecialidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"7\",\r\n    \"nome_categoria\": \"BANCO DE DADOS 7 ALTERADO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/categoria/alterarCategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"alterarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletarEspecialidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/categoria/deletarCategoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"deletarCategoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "cadastrarMedico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "titulo",
+									"value": "Criando novos hábitos",
+									"type": "text"
+								},
+								{
+									"key": "preco",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/Aluno/Downloads/ford.jpg",
+										"/C:/Users/Aluno/Downloads/foord.jpg"
+									]
+								},
+								{
+									"key": "detalhes",
+									"value": "AutoAjuda",
+									"type": "text"
+								},
+								{
+									"key": "tblCategoriaumId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/livro/cadastrarLivro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"cadastrarLivro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarMedico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "titulo",
+									"value": "Criando novos hábitos",
+									"type": "text"
+								},
+								{
+									"key": "preco",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "detalhes",
+									"value": "Teste, edição de livro s/ imagem.",
+									"type": "text"
+								},
+								{
+									"key": "tblCategoriaumId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/livro/editarLivro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"editarLivro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarMedico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/livro/listarLivro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"listarLivro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarMedicoCodigo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/livro/listarLivroCodigo/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"listarLivroCodigo",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluirMedico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/livro/excluirLivro/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"excluirLivro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
